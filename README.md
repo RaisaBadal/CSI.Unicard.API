@@ -192,4 +192,23 @@ BEGIN
 
 end
 ```
+2. Describe how you would ensure data integrity in the database, particularly for the `Orders` and
+`OrderItems` tables.
+```sh
+Foreign Key Constraints:
+
+Foreign key constraints ensure that each OrderId in the OrderItems table corresponds to a valid OrderId in the Orders table, and each ProductId in the OrderItems table corresponds to a valid ProductId in the Products table.
+```
+```sh
+Transactions:
+
+Use transactions to ensure that operations affecting multiple rows or tables are atomic. If any part of the transaction fails, the entire transaction can be rolled back, ensuring that the database remains in a consistent state.
+```
+```sh
+Stored Procedures:
+
+Use stored procedures to encapsulate business logic. Stored procedures can ensure that operations are performed in a controlled manner, validating input data and maintaining consistency.
+```
+
+
 
