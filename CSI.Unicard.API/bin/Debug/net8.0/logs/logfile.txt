@@ -1,0 +1,28 @@
+2024-07-08 11:53:34.0343|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.NotSupportedException: Specified method is not supported.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)
+   at RequestResponseLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.API\CustomMiddleware\RequestResponseLoggingMiddleware.cs:line 21
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-08 16:59:25.7125|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2024-07-08 17:37:29.2088|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7230
+2024-07-08 17:37:29.2231|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5151
+2024-07-08 17:37:29.2752|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-07-08 17:37:29.2752|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-07-08 17:37:29.2752|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.API
+2024-07-08 17:37:29.7431|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - - -
+2024-07-08 17:37:29.9195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - 200 - text/html;charset=utf-8 176.0145ms
+2024-07-08 17:37:30.2017|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - -
+2024-07-08 17:37:30.2017|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - - -
+2024-07-08 17:37:30.2078|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript;+charset=utf-8 5.4840ms
+2024-07-08 17:37:30.2404|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 38.4568ms
+2024-07-08 17:37:30.6453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - -
+2024-07-08 17:37:30.9101|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 264.6715ms
+2024-07-08 17:37:36.2970|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7230/api/User/GetAll - - -
+2024-07-08 17:37:36.3233|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CSI.Unicard.API.Controllers.UserController.GetAll (CSI.Unicard.API)'
+2024-07-08 17:37:36.3959|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[CSI.Application.response.Response`1[System.Collections.Generic.IEnumerable`1[CSI.Unicard.Domain.Models.Users]]] GetAll() on controller CSI.Unicard.API.Controllers.UserController (CSI.Unicard.API).
+2024-07-08 17:37:37.2029|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CSI.Application.response.Response`1[[System.Collections.Generic.IEnumerable`1[[CSI.Unicard.Domain.Models.Users, CSI.Unicard.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-08 17:37:37.2545|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CSI.Unicard.API.Controllers.UserController.GetAll (CSI.Unicard.API) in 838.5891ms
+2024-07-08 17:37:37.2545|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CSI.Unicard.API.Controllers.UserController.GetAll (CSI.Unicard.API)'
+2024-07-08 17:37:37.2545|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7230/api/User/GetAll - 200 - application/json;+charset=utf-8 959.2555ms

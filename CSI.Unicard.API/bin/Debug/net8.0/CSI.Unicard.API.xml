@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSI.Unicard.API</name>
+    </assembly>
+    <members>
+        <member name="T:CSI.Unicard.API.Controllers.OrderController">
+            <summary>
+            Controller for managing orders.
+            </summary>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderController.#ctor(CSI.Unicard.Application.Interfaces.IOrderService,Microsoft.Extensions.Logging.ILogger{CSI.Unicard.API.Controllers.OrderController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSI.Unicard.API.Controllers.OrderController"/> class.
+            </summary>
+            <param name="orderService">The service for managing orders.</param>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderController.Add(CSI.Unicard.Domain.Models.Orders)">
+            <summary>
+            Adds a new order.
+            </summary>
+            <param name="orders">The order to add.</param>
+            <returns>A task representing the asynchronous operation, with an IActionResult containing the result.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderController.GetById(System.Int32)">
+            <summary>
+            Gets an order by its ID.
+            </summary>
+            <param name="id">The ID of the order.</param>
+            <returns>A task representing the asynchronous operation, with a Response containing the order.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderController.GetAll">
+            <summary>
+            Gets all orders.
+            </summary>
+            <returns>A task representing the asynchronous operation, with a Response containing a list of orders.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderController.DeleteById(System.Int32)">
+            <summary>
+            Deletes an order by its ID.
+            </summary>
+            <param name="id">The ID of the order to delete.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:CSI.Unicard.API.Controllers.OrderItemController">
+            <summary>
+            Controller for managing order items.
+            </summary>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderItemController.#ctor(CSI.Unicard.Application.Interfaces.IOrderItemService,Microsoft.Extensions.Logging.ILogger{CSI.Unicard.API.Controllers.OrderItemController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSI.Unicard.API.Controllers.OrderItemController"/> class.
+            </summary>
+            <param name="orderItemService">The service for managing order items.</param>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderItemController.Add(CSI.Unicard.Domain.Models.OrderItems)">
+            <summary>
+            Adds a new order item.
+            </summary>
+            <param name="orderItem">The order item to add.</param>
+            <returns>A task representing the asynchronous operation, with an IActionResult containing the result.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderItemController.GetById(System.Int32)">
+            <summary>
+            Gets an order item by its ID.
+            </summary>
+            <param name="id">The ID of the order item.</param>
+            <returns>A task representing the asynchronous operation, with a Response containing the order item.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderItemController.GetAll">
+            <summary>
+            Gets all order items.
+            </summary>
+            <returns>A task representing the asynchronous operation, with a Response containing a list of order items.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.OrderItemController.DeleteById(System.Int32)">
+            <summary>
+            Deletes an order item by its ID.
+            </summary>
+            <param name="id">The ID of the order item to delete.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:CSI.Unicard.API.Controllers.ProductController">
+            <summary>
+            Controller for managing products.
+            </summary>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.ProductController.#ctor(CSI.Unicard.Application.Interfaces.IProductService,Microsoft.Extensions.Logging.ILogger{CSI.Unicard.API.Controllers.ProductController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSI.Unicard.API.Controllers.ProductController"/> class.
+            </summary>
+            <param name="productService">The service for managing products.</param>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.ProductController.GetAllProduct">
+            <summary>
+            Gets all products.
+            </summary>
+            <returns>A task representing the asynchronous operation, with a list of product DTOs.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.ProductController.GetById(System.Int32)">
+            <summary>
+            Gets a product by its ID.
+            </summary>
+            <param name="id">The ID of the product.</param>
+            <returns>A task representing the asynchronous operation, with the product DTO.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.ProductController.Add(CSI.Unicard.Application.DTOs.ProductDTO)">
+            <summary>
+            Adds a new product.
+            </summary>
+            <param name="product">The product to add.</param>
+            <returns>A task representing the asynchronous operation, with an IActionResult containing the result.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.ProductController.DeleteById(System.Int32)">
+            <summary>
+            Deletes a product by its ID.
+            </summary>
+            <param name="id">The ID of the product to delete.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:CSI.Unicard.API.Controllers.UserController">
+            <summary>
+            Controller for managing users.
+            </summary>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.UserController.#ctor(CSI.Unicard.Application.Interfaces.IUserService,Microsoft.Extensions.Logging.ILogger{CSI.Unicard.API.Controllers.UserController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSI.Unicard.API.Controllers.UserController"/> class.
+            </summary>
+            <param name="userService">The service for managing users.</param>
+            <param name="logger">The logger instance.</param>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.UserController.Add(CSI.Unicard.Domain.Models.Users)">
+            <summary>
+            Adds a new user.
+            </summary>
+            <param name="user">The user to add.</param>
+            <returns>A task representing the asynchronous operation, with an IActionResult containing the result.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Gets a user by their ID.
+            </summary>
+            <param name="id">The ID of the user.</param>
+            <returns>A task representing the asynchronous operation, with a Response containing the user.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.UserController.GetAll">
+            <summary>
+            Gets all users.
+            </summary>
+            <returns>A task representing the asynchronous operation, with a Response containing a list of users.</returns>
+        </member>
+        <member name="M:CSI.Unicard.API.Controllers.UserController.DeleteById(System.Int32)">
+            <summary>
+            Deletes a user by their ID.
+            </summary>
+            <param name="id">The ID of the user to delete.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+    </members>
+</doc>

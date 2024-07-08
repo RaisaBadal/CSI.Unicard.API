@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uiVO4Nf4TUdvJoHXBvVgwRqokHNZMN2OQOv7cdhiL7A=",
+  "Source": "CSI.Unicard.API",
+  "BasePath": "_content/CSI.Unicard.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

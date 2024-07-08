@@ -1,0 +1,13 @@
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\bin\Debug\net8.0\CSI.Unicard.Persistance.deps.json
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\bin\Debug\net8.0\CSI.Unicard.Persistance.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\bin\Debug\net8.0\CSI.Unicard.Persistance.pdb
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.csproj.AssemblyReference.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.AssemblyInfoInputs.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.AssemblyInfo.cs
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\refint\CSI.Unicard.Persistance.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\CSI.Unicard.Persistance.pdb
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\obj\Debug\net8.0\ref\CSI.Unicard.Persistance.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Persistanse\bin\Debug\net8.0\NLog.config

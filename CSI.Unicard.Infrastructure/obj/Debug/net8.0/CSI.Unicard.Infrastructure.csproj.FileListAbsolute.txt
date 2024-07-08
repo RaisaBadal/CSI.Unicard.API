@@ -1,0 +1,16 @@
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\NLog.config
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\CSI.Unicard.Infrastructure.deps.json
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\CSI.Unicard.Infrastructure.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\CSI.Unicard.Infrastructure.pdb
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\CSI.Unicard.Domain.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\bin\Debug\net8.0\CSI.Unicard.Domain.pdb
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.AssemblyInfo.cs
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unic.D8F276B9.Up2Date
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\refint\CSI.Unicard.Infrastructure.dll
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\CSI.Unicard.Infrastructure.pdb
+C:\Users\RAISA\source\repos\CSI.Unicard.API\CSI.Unicard.Infrastructure\obj\Debug\net8.0\ref\CSI.Unicard.Infrastructure.dll
