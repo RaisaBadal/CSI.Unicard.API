@@ -99,3 +99,97 @@ BEGIN
     INNER JOIN Orders o ON u.UserId = o.UserId;
 END;
 ```
+
+# Task 3: Performance Optimization
+Objective: Test ability to optimize database queries and API performance.
+Task:
+1. Given the following query, identify potential performance issues and suggest improvements:
+SELECT p.ProductName, SUM(oi.Quantity) AS TotalQuantity
+FROM Products p
+JOIN OrderItems oi ON p.ProductId = oi.ProductId
+GROUP BY p.ProductName
+ORDER BY TotalQuantity DESC;
+2. Optimize the above query for better performance.
+
+```sh
+CREATE INDEX idx_orderitems_productid ON OrderItems(ProductId);
+
+SELECT p.ProductName, SUM(oi.Quantity) AS TotalQuantity
+FROM Products p
+JOIN OrderItems oi ON p.ProductId = oi.ProductId
+GROUP BY p.ProductId
+ORDER BY TotalQuantity DESC;
+```
+
+#Task 4: Data Integrity and Transactions
+Objective: Evaluate understanding of data integrity and transaction management in SQL.
+Task:
+1. Write a stored procedure(s) to create a new order with multiple order items. Ensure that the
+procedure handles transactions and rolls back in case of any errors.
+
+```sh
+
+CREATE PROCEDURE InsertOrderItem
+    @OrderId int,
+    @ProductId int,
+    @Quantity int,
+    @Price decimal
+AS
+BEGIN
+    INSERT INTO OrderItems (OrderId, ProductId, Quantity, Price)
+    VALUES (@OrderId, @ProductId, @Quantity, @Price);
+END;
+GO
+
+
+
+CREATE PROCEDURE CreateNewOrder
+    @UserId int,
+    @OrderDate date,
+    @TotalAmount decimal OUTPUT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @OrderId int;
+
+    BEGIN TRY
+        BEGIN TRANSACTION;
+        INSERT INTO Orders (UserId, OrderDate, TotalAmount)
+        VALUES (@UserId, @OrderDate, 0);
+
+        SET @OrderId = SCOPE_IDENTITY();
+
+        DECLARE @ProductId int;
+        DECLARE @Quantity int;
+        DECLARE @Price decimal;
+
+        SET @ProductId = 1;
+        SET @Quantity = 2;
+        SET @Price = 10.00;
+        EXEC InsertOrderItem @OrderId, @ProductId, @Quantity, @Price;
+
+        SET @ProductId = 2;
+        SET @Quantity = 1;
+        SET @Price = 20.00;
+        EXEC InsertOrderItem @OrderId, @ProductId, @Quantity, @Price;
+
+        SELECT @TotalAmount = SUM(Quantity * Price)
+        FROM OrderItems
+        WHERE OrderId = @OrderId;
+
+        UPDATE Orders
+        SET TotalAmount = @TotalAmount
+        WHERE OrderId = @OrderId;
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+		throw
+		
+		end catch
+
+end
+```
+
